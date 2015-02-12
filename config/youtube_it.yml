@@ -1,0 +1,11 @@
+common: &common
+  dev_key: AI39si6zUmKhEx4rtMxB-v9xJ0IyWouFG62d2msd8frHuO49Ew7sGUX880x9RtyDAqOqS5jecUPUtSfaBTykjfHHojLR4f6cIA
+  username:  arbinderapptree@gmail.com
+  password:  apptree123
+  
+test:
+  <<: *common
+development:
+  <<: *common
+production:
+  <<: *common

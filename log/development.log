@@ -1,0 +1,1432 @@
+
+
+Started GET "/my_feeds" for 127.0.0.1 at 2015-02-10 16:59:54 +0530
+Processing by FeedController#my_feeds as HTML
+Completed 500 Internal Server Error in 7525ms
+
+ActionView::MissingTemplate (Missing template feed/my_feeds, application/my_feeds with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/attmac106/my_feeds/app/views"
+):
+  actionview (4.1.6) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.6) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.6) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.6) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.6) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.6) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.6) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.6) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.6) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.6) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/attmac106/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (4.1.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/attmac106/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/attmac106/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/attmac106/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (55.8ms)
+
+
+Started GET "/my_feeds.json" for 127.0.0.1 at 2015-02-10 17:38:59 +0530
+Processing by FeedController#my_feeds as JSON
+Completed 200 OK in 2792ms (Views: 54.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_feeds.json" for 127.0.0.1 at 2015-02-10 17:41:22 +0530
+Processing by FeedController#my_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 1189ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_feeds.json" for 127.0.0.1 at 2015-02-10 17:54:25 +0530
+Processing by FeedController#my_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 7014ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_feeds.json" for 127.0.0.1 at 2015-02-10 18:03:22 +0530
+Processing by FeedController#my_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 1570ms
+
+JSON::ParserError (757: unexpected token at '<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7 not-logged-in "> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8 not-logged-in "> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9 not-logged-in "> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js not-logged-in "> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Page Not Found &bull; Instagram</title>
+
+        <script type="text/javascript">
+  WebFontConfig = {
+    custom: {
+      families: ['proxima-nova:n4,n7'],
+      urls: ['//instagramstatic-a.akamaihd.net/bluebar/85aa087/cache/fonts.css']
+    }
+  };
+</script>
+<script src="//instagramstatic-a.akamaihd.net/bluebar/85aa087/scripts/webfont.js" type="text/javascript" async></script>
+
+        
+    
+        <meta name="robots" content="noimageindex">
+        
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+        
+    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+
+        <script type="text/javascript">
+        (function() {
+            var docElement = document.documentElement;
+            var classRE = new RegExp('(^|\\s)no-js(\\s|$)');
+            var className = docElement.className;
+            docElement.className = className.replace(classRE, '$1js$2');
+        })();
+        </script>
+
+        
+    
+        <script type="text/javascript">
+            GATEKEEPERS = {
+                banzai_logs: true
+            };
+        </script>
+        
+    
+        <link rel="Shortcut Icon" type="image/x-icon" href="//instagramstatic-a.akamaihd.net/bluebar/85aa087/images/ico/favicon.ico">
+    
+    
+        <link rel="apple-touch-icon-precomposed" href="//instagramstatic-a.akamaihd.net/bluebar/85aa087/images/ico/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//instagramstatic-a.akamaihd.net/bluebar/85aa087/images/ico/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="//instagramstatic-a.akamaihd.net/bluebar/85aa087/images/ico/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//instagramstatic-a.akamaihd.net/bluebar/85aa087/images/ico/apple-touch-icon-144x144-precomposed.png">
+    
+    
+    <link href="//instagramstatic-a.akamaihd.net/bluebar/85aa087/cache/distillery/dialog-main.css" type="text/css" rel="stylesheet"></link>
+
+    
+
+    </head>
+    <body class=" p-error dialog-404">
+        
+    
+        <div class="root">
+        
+            <div class="page">
+                
+                    
+                        <header class="top-bar top-bar-new">
+    <div class="top-bar-wrapper">
+        <div class="logo"><a href="/">Instagram</a></div>
+
+        <div class="top-bar-left">
+            <ul class="top-bar-actions">
+                <li>
+                    <a class="top-bar-home" href="/" label=Home><i></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="top-bar-right account-state" id="top_bar_right">
+            <ul class="top-bar-actions">
+                
+                
+                <li id="link_profile" class="link-signin">
+                    <a href="/accounts/login/" class="loginLink">
+                        <i></i>
+                        <strong>Log in</strong>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</header> <!-- .top-bar -->
+                    
+                
+
+                
+                <div class="main">
+                    
+	<div class="error-container">
+	
+
+	<h2>Page Not Found</h2>
+
+	<p>
+        This page could not be found.
+        <br />
+        You might have followed an incorrect link.
+    </p>
+
+
+	</div>
+
+                </div> <!-- .main -->
+                
+
+            </div> <!-- .page -->
+
+            
+            <footer class="page-footer" role="contentinfo">
+                <div class="wrapper">
+                    <nav>
+                        <ul>
+                            <li><a href="/about/us/">About us</a></li>
+                            <li><a href="http://help.instagram.com/">Support</a></li>
+                            <li><a href="http://blog.instagram.com/">Blog</a></li>
+                            <li><a href="http://instagram.com/press/">Press</a></li>
+                            <li><a href="/developer/">API</a></li>
+                            <li><a href="/about/jobs/">Jobs</a></li>
+                            <li><a href="/about/legal/privacy/">Privacy</a></li>
+                            <li><a href="/about/legal/terms/">Terms</a></li>
+                        </ul>
+                    </nav>
+
+                    <p class="copyright">&copy; 2015 Instagram</p>
+                </div>
+            </footer>
+            
+        
+        <div id="reactModalMountPoint"></div>
+    </div> <!-- .root -->
+    
+    
+
+        
+    <script type="text/javascript">
+window._strings = {
+
+"%(count)s comments": "%(count)s comments",
+"%(count)s followers": "%(count)s followers",
+"%(count)s following": "%(count)s following",
+"%(count)s likes": "%(count)s likes",
+"%(count)s more comments": "%(count)s more comments",
+"%(count)s new posts": "%(count)s new posts",
+"%(count)s people liked this photo": "%(count)s people liked this photo",
+"%(count)s photos,": "%(count)s photos,",
+"%(count)s posts": "%(count)s posts",
+"%(count)s+ new posts": "%(count)s+ new posts",
+"%(day)s %(month_name)s %(year)s": "%(day)s %(month_name)s %(year)s",
+"%(days)s days ago": "%(days)s days ago",
+"%(days)sd": "%(days)sd",
+"%(followerCount)s followers": "%(followerCount)s followers",
+"%(hours)s hours ago": "%(hours)s hours ago",
+"%(hours)sh": "%(hours)sh",
+"%(likes)s likes, %(comments)s comments": "%(likes)s likes, %(comments)s comments",
+"%(mediaCount)s photos": "%(mediaCount)s photos",
+"%(minutes)s minutes ago": "%(minutes)s minutes ago",
+"%(minutes)sm": "%(minutes)sm",
+"%(months)s months ago": "%(months)s months ago",
+"%(seconds)s seconds ago": "%(seconds)s seconds ago",
+"%(seconds)ss": "%(seconds)ss",
+"%(user)s on Instagram": "%(user)s on Instagram",
+"%(username)s on Instagram": "%(username)s on Instagram",
+"%(weeks)s weeks ago": "%(weeks)s weeks ago",
+"%(weeks)sw": "%(weeks)sw",
+"%(year)s %(month)s": "%(year)s %(month)s",
+"1": "1",
+"1 comment": "1 comment",
+"1 day ago": "1 day ago",
+"1 follower": "1 follower",
+"1 hour ago": "1 hour ago",
+"1 like": "1 like",
+"1 minute ago": "1 minute ago",
+"1 month ago": "1 month ago",
+"1 more comment": "1 more comment",
+"1 new post": "1 new post",
+"1 photo>": "1 photo\u003E",
+"1 second ago": "1 second ago",
+"1 week ago": "1 week ago",
+"2": "2",
+"3": "3",
+"AM": "AM",
+"About us": "About us",
+"Account Insights - Instagram": "Account Insights \u002D Instagram",
+"Add a caption...": "Add a caption...",
+"Add a comment": "Add a comment",
+"All items loaded": "All items loaded",
+"Apr": "Apr",
+"April": "April",
+"Are you sure you want to delete this comment?": "Are you sure you want to delete this comment?",
+"Are you sure?": "Are you sure?",
+"Audience": "Audience",
+"Aug": "Aug",
+"August": "August",
+"Badges": "Badges",
+"Blog": "Blog",
+"By using this embed, you agree to Instagram\\'s <a href=\"http://instagram.com/about/legal/terms/api/\">API Terms of Use</a>.": "By using this embed, you agree to Instagram\u005C\u0027s \u003Ca href\u003D\u0022http://instagram.com/about/legal/terms/api/\u0022\u003EAPI Terms of Use\u003C/a\u003E.",
+"Cancel": "Cancel",
+"Content unavailable": "Content unavailable",
+"Copy Embed Code": "Copy Embed Code",
+"Copy this code:": "Copy this code:",
+"Couldn\\'t post comment": "Couldn\u005C\u0027t post comment",
+"Dec": "Dec",
+"December": "December",
+"Delete": "Delete",
+"Edit Profile": "Edit Profile",
+"Embed": "Embed",
+"Feb": "Feb",
+"February": "February",
+"Follow": "Follow",
+"Follow %(username)s on Instagram": "Follow %(username)s on Instagram",
+"Follow friends and interesting people to see their photos here.": "Follow friends and interesting people to see their photos here.",
+"Following": "Following",
+"Forgot your password?": "Forgot your password?",
+"Fri": "Fri",
+"Friday": "Friday",
+"Here are some suggestions.": "Here are some suggestions.",
+"Home": "Home",
+"Jan": "Jan",
+"January": "January",
+"Jobs": "Jobs",
+"Jul": "Jul",
+"July": "July",
+"Jun": "Jun",
+"June": "June",
+"Leave a comment...": "Leave a comment...",
+"Like": "Like",
+"Likes": "Likes",
+"Load More...": "Load More...",
+"Load more": "Load more",
+"Load more...": "Load more...",
+"Loading more...": "Loading more...",
+"Loading...": "Loading...",
+"Log Out": "Log Out",
+"Log in": "Log in",
+"Mar": "Mar",
+"March": "March",
+"May": "May",
+"Mon": "Mon",
+"Monday": "Monday",
+"More": "More",
+"Next photo": "Next photo",
+"No Recent Photos": "No Recent Photos",
+"No likes yet.": "No likes yet.",
+"No photos to show.": "No photos to show.",
+"Nov": "Nov",
+"November": "November",
+"Now": "Now",
+"Oct": "Oct",
+"October": "October",
+"Open in App": "Open in App",
+"Others": "Others",
+"PM": "PM",
+"Password:": "Password:",
+"Paste it on your website, blog, or wherever you want to link to your profile!": "Paste it on your website, blog, or wherever you want to link to your profile!",
+"People you follow": "People you follow",
+"Performance": "Performance",
+"Photo by %(username)s": "Photo by %(username)s",
+"Posts": "Posts",
+"Press": "Press",
+"Press Page - Instagram": "Press Page \u002D Instagram",
+"Previous Posts": "Previous Posts",
+"Previous photo": "Previous photo",
+"Privacy": "Privacy",
+"Report inappropriate": "Report inappropriate",
+"Requested": "Requested",
+"Retry": "Retry",
+"Sat": "Sat",
+"Saturday": "Saturday",
+"Select your badge:": "Select your badge:",
+"Sep": "Sep",
+"September": "September",
+"Summary": "Summary",
+"Sun": "Sun",
+"Sunday": "Sunday",
+"Support": "Support",
+"Terms": "Terms",
+"This user is private": "This user is private",
+"Thu": "Thu",
+"Thursday": "Thursday",
+"To follow %(username)s, you need to log in.": "To follow %(username)s, you need to log in.",
+"Toggle like": "Toggle like",
+"Tue": "Tue",
+"Tuesday": "Tuesday",
+"Username:": "Username:",
+"Video by %(username)s": "Video by %(username)s",
+"View Photo Page": "View Photo Page",
+"View Profile": "View Profile",
+"View Video Page": "View Video Page",
+"View on Instagram": "View on Instagram",
+"Wed": "Wed",
+"Wednesday": "Wednesday",
+"When you are finished following people,": "When you are finished following people,",
+"Write a comment...": "Write a comment...",
+"Yes": "Yes",
+"You must log in to add a comment.": "You must log in to add a comment.",
+"You must log in to like this photo.": "You must log in to like this photo.",
+"You need to be following %(username)s to like or comment": "You need to be following %(username)s to like or comment",
+"Your username or password was incorrect.": "Your username or password was incorrect.",
+"am": "am",
+"banner photo": "banner photo",
+"nd": "nd",
+"pm": "pm",
+"rd": "rd",
+"reload this page": "reload this page",
+"st": "st",
+"th": "th"
+};
+</script>
+    <script src=//instagramstatic-a.akamaihd.net/bluebar/85aa087/scripts/polyfills/es5-shim.min.js></script>
+<script src=//instagramstatic-a.akamaihd.net/bluebar/85aa087/scripts/polyfills/es5-sham.min.js></script>
+<script type="text/javascript">window._sharedData = {"static_root":"\/\/instagramstatic-a.akamaihd.net\/bluebar\/85aa087","platform":{"is_touch":false,"app_platform":"web","gets_full_react_experience":true},"hostname":"api.instagram.com","entry_data":{},"country_code":"IN","config":{"viewer":null,"csrf_token":"NOTPROVIDED"}};</script>
+<script src="//instagramstatic-a.akamaihd.net/bluebar/85aa087/cache/bundles/en_US_webpack-common.js"></script>
+    
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18105282-1']);
+        _gaq.push(['_setDomainName', 'instagram.com']);
+        _gaq.push(['_setAllowLinker', true]);
+        
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    
+
+    </body>
+</html>'):
+  app/controllers/feed_controller.rb:5:in `my_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.0ms)
+
+
+Started GET "/my_feeds.json" for 127.0.0.1 at 2015-02-10 18:03:54 +0530
+Processing by FeedController#my_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 2137ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_tweets.json" for 127.0.0.1 at 2015-02-10 18:43:22 +0530
+Processing by FeedController#my_tweets as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 48ms
+
+NameError (undefined local variable or method `client' for #<FeedController:0x007f8b1f4d5b50>):
+  app/controllers/feed_controller.rb:21:in `my_tweets'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.9ms)
+
+
+Started GET "/my_tweets.json" for 127.0.0.1 at 2015-02-10 18:44:08 +0530
+Processing by FeedController#my_tweets as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 1342ms
+
+Twitter::Error::Unauthorized (Invalid or expired token):
+  app/controllers/feed_controller.rb:21:in `my_tweets'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.5ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 12:22:36 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 3419ms
+
+Koala::Facebook::AuthenticationError (type: OAuthException, code: 190, message: Invalid OAuth access token. [HTTP 400]):
+  app/controllers/feed_controller.rb:33:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.7ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 12:33:32 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 2107ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 12:35:03 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 5ms
+
+NameError (undefined local variable or method `access_token' for #<FeedController:0x007f843e9c13e0>):
+  app/controllers/feed_controller.rb:33:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (59.8ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 12:35:21 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 1729ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 12:36:46 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 950ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 12:37:09 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 1225ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 12:39:34 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/feed_controller.rb:32:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.7ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 12:40:05 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 51ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/feed_controller.rb:32:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.7ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 12:41:32 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 12:41:44 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/feed_controller.rb:32:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.5ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 12:41:57 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/feed_controller.rb:32:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.6ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 12:42:16 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/feed_controller.rb:32:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.1ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 12:49:14 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/feed_controller.rb:32:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.7ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 12:49:38 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/feed_controller.rb:32:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.7ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 12:57:23 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant FeedController::RAILS_ROOT):
+  app/controllers/feed_controller.rb:32:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.5ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 12:58:01 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 40ms
+
+Psych::SyntaxError ((/Users/attmac106/my_feeds/config/facebook.yml): found character that cannot start any token while scanning for the next token at line 2 column 1):
+  app/controllers/feed_controller.rb:32:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.8ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 12:58:34 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 12:59:09 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 12:59:47 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/feed_controller.rb:32:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.7ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 13:00:39 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 2231ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 13:01:39 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 2074ms
+
+Koala::Facebook::ClientError (type: OAuthException, code: 100, message: (#100) Tried accessing nonexisting field (activity) on node type (User) [HTTP 400]):
+  app/controllers/feed_controller.rb:34:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.7ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 13:03:46 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 3942ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 13:04:27 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 6339ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 13:08:23 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 3524ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 13:08:53 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 5974ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 13:09:52 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 15505ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 13:11:06 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 6918ms
+
+Koala::Facebook::ClientError (type: OAuthException, code: 12, message: (#12) friend requests is deprecated for versions v2.0 and higher [HTTP 400]):
+  app/controllers/feed_controller.rb:35:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.5ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 13:13:47 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 7963ms
+
+Koala::Facebook::AuthenticationError (type: OAuthException, code: 2500, message: Unknown path components: /feeds [HTTP 400]):
+  app/controllers/feed_controller.rb:35:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.3ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 13:14:12 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 5337ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 13:28:39 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 8456ms (Views: 67.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 13:30:20 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 2490ms
+
+Koala::Facebook::ClientError (type: OAuthException, code: 200, message: (#200) The user hasn't authorized the application to perform this action [HTTP 403]):
+  app/controllers/feed_controller.rb:36:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.3ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 13:45:11 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 4459ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 13:47:08 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 1418ms
+
+NameError (undefined local variable or method `profile' for #<FeedController:0x007fe7f13ec548>):
+  app/controllers/feed_controller.rb:38:in `block (2 levels) in my_fb_feeds'
+  app/controllers/feed_controller.rb:37:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (26.4ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (400.8ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 13:47:32 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 791ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 13:48:05 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 2312ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 14:01:12 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 2122ms
+
+Koala::Facebook::ClientError (type: OAuthException, code: 10, message: (#10) To use taggable_friends on behalf of people who are not admins, developers and testers of your app, your use of this endpoint must be reviewed and approved by Facebook. To submit this feature for review please read our documentation on reviewable features: https://developers.facebook.com/docs/apps/review [HTTP 400]):
+  app/controllers/feed_controller.rb:34:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.6ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 14:07:24 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 0ms
+
+TypeError (can't convert Fixnum into String):
+  app/controllers/feed_controller.rb:35:in `+'
+  app/controllers/feed_controller.rb:35:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (19.5ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (13.2ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (50.6ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 14:08:26 +0530
+
+SyntaxError (/Users/attmac106/my_feeds/app/controllers/feed_controller.rb:35: syntax error, unexpected tIDENTIFIER, expecting ')'
+...are FROM user WHERE uid =' user )
+...                               ^):
+  app/controllers/feed_controller.rb:35: syntax error, unexpected tIDENTIFIER, expecting ')'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (23.9ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (188.1ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 14:08:50 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 1ms
+
+TypeError (can't convert Fixnum into String):
+  app/controllers/feed_controller.rb:35:in `+'
+  app/controllers/feed_controller.rb:35:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.7ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 14:09:03 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 1542ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 14:10:52 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 996ms
+
+Koala::Facebook::ClientError (type: OAuthException, code: 602, message: (#602) friends is not a member of the user table. [HTTP 400]):
+  app/controllers/feed_controller.rb:35:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (36.3ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (51.1ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 14:13:54 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 1802ms
+
+Koala::Facebook::ClientError (type: OAuthException, code: 602, message: (#602) START_TIME is not a member of the stream table. [HTTP 400]):
+  app/controllers/feed_controller.rb:36:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (28.6ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (40.9ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 14:14:25 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 2725ms
+
+NameError (undefined local variable or method `profile' for #<FeedController:0x007fe7f10f5f10>):
+  app/controllers/feed_controller.rb:40:in `block (2 levels) in my_fb_feeds'
+  app/controllers/feed_controller.rb:39:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (40.2ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 14:14:36 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 3094ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_youtube.json" for 127.0.0.1 at 2015-02-11 14:47:05 +0530
+Processing by FeedController#my_youtube as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 2244ms
+
+SystemStackError (stack level too deep):
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:79
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (50.2ms)
+
+
+Started GET "/my_youtube.json" for 127.0.0.1 at 2015-02-11 14:48:57 +0530
+Processing by FeedController#my_youtube as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 1799ms
+
+SystemStackError (stack level too deep):
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:79
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.0ms)
+
+
+Started GET "/my_tube.json" for 127.0.0.1 at 2015-02-11 14:51:29 +0530
+Processing by FeedController#my_youtube as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 1298ms
+
+SystemStackError (stack level too deep):
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:79
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.4ms)
+
+
+Started GET "/my_tube.json" for 127.0.0.1 at 2015-02-11 14:52:12 +0530
+Processing by FeedController#my_youtube as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 1381ms
+
+SystemStackError (stack level too deep):
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:79
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.4ms)
+
+
+Started GET "/my_tube.json" for 127.0.0.1 at 2015-02-11 14:53:09 +0530
+Processing by FeedController#my_youtube as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 1472ms
+
+SystemStackError (stack level too deep):
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:79
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.3ms)
+
+
+Started GET "/my_tube.json" for 127.0.0.1 at 2015-02-11 14:54:43 +0530
+Processing by FeedController#my_youtube as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 1541ms
+
+SystemStackError (stack level too deep):
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:79
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.1ms)
+
+
+Started GET "/my_tube.json" for 127.0.0.1 at 2015-02-11 14:55:17 +0530
+Processing by FeedController#my_you as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 1267ms
+
+SystemStackError (stack level too deep):
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:79
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.7ms)
+
+
+Started GET "/my_tube.json" for 127.0.0.1 at 2015-02-11 14:56:24 +0530
+Processing by FeedController#my_you as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_tube.json" for 127.0.0.1 at 2015-02-11 16:40:35 +0530
+Processing by FeedController#my_you as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 2376ms
+
+ArgumentError (File does not exist: .):
+  app/controllers/feed_controller.rb:48:in `my_you'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (44.8ms)
+
+
+Started GET "/my_tube.json" for 127.0.0.1 at 2015-02-11 16:50:45 +0530
+Processing by FeedController#my_you as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 1683ms
+
+ArgumentError (File does not exist: .):
+  app/controllers/feed_controller.rb:48:in `my_you'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (39.1ms)
+
+
+Started GET "/my_tube.json" for 127.0.0.1 at 2015-02-11 16:51:32 +0530
+Processing by FeedController#my_you as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 569ms
+
+ArgumentError (File does not exist: .):
+  app/controllers/feed_controller.rb:48:in `my_you'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.8ms)
+
+
+Started GET "/my_tube.json" for 127.0.0.1 at 2015-02-11 16:58:28 +0530
+Processing by FeedController#my_you as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 487ms
+
+ArgumentError (File does not exist: .):
+  app/controllers/feed_controller.rb:48:in `my_you'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (32.1ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (46.2ms)
+
+
+Started GET "/my_tube.json" for 127.0.0.1 at 2015-02-11 17:00:06 +0530
+Processing by FeedController#my_you as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 1164ms
+
+ArgumentError (File does not exist: .):
+  app/controllers/feed_controller.rb:48:in `my_you'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.2ms)
+
+
+Started GET "/my_tube.json" for 127.0.0.1 at 2015-02-11 17:00:20 +0530
+Processing by FeedController#my_you as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 345ms
+
+ArgumentError (File does not exist: .):
+  app/controllers/feed_controller.rb:48:in `my_you'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.8ms)
+
+
+Started GET "/my_tube.json" for 127.0.0.1 at 2015-02-11 17:43:01 +0530
+Processing by FeedController#my_you as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 2436ms (Views: 63.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_tube.json" for 127.0.0.1 at 2015-02-11 17:57:55 +0530
+Processing by FeedController#my_you as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 2868ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_tube.json" for 127.0.0.1 at 2015-02-11 18:00:22 +0530
+
+SyntaxError (/Users/attmac106/my_feeds/app/controllers/feed_controller.rb:48: syntax error, unexpected ':', expecting ')'
+		@data = youtube.videos_by(:query => "rnkcore" :page => 1)
+		                                               ^):
+  app/controllers/feed_controller.rb:48: syntax error, unexpected ':', expecting ')'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.4ms)
+
+
+Started GET "/my_tube.json" for 127.0.0.1 at 2015-02-11 18:00:47 +0530
+Processing by FeedController#my_you as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 1662ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_tube.json" for 127.0.0.1 at 2015-02-11 18:01:06 +0530
+Processing by FeedController#my_you as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 1273ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_tube.json" for 127.0.0.1 at 2015-02-11 18:21:20 +0530
+Processing by FeedController#my_you as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 4642ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-11 18:31:17 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 1852ms
+
+Koala::Facebook::AuthenticationError (type: OAuthException, code: 190, error_subcode: 463, message: Error validating access token: Session has expired on 11 ਫਰਵਰੀ 2015 ਸਵੇਰ 01:00. The current time is 11 ਫਰਵਰੀ 2015 ਸਵੇਰ 05:01. [HTTP 400]):
+  app/controllers/feed_controller.rb:37:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (39.2ms)
+
+
+Started GET "/my_tube.json" for 127.0.0.1 at 2015-02-11 19:05:48 +0530
+Processing by FeedController#my_you as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 2404ms (Views: 53.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-12 11:25:44 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 1629ms
+
+Koala::Facebook::AuthenticationError (type: OAuthException, code: 190, error_subcode: 463, message: Error validating access token: Session has expired on 11 ਫਰਵਰੀ 2015 ਸਵੇਰ 01:00. The current time is 11 ਫਰਵਰੀ 2015 ਬਾਅਦ ਦੁਪਹਿਰ/ਸ਼ਾਮ 09:55. [HTTP 400]):
+  app/controllers/feed_controller.rb:37:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (39.9ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-12 11:42:15 +0530
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.1.6) lib/active_record/migration.rb:389:in `check_pending!'
+  activerecord (4.1.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/attmac106/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/attmac106/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/attmac106/.rvm/rubies/ruby-1.9.3-p547/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.4ms)
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (17.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateFeeds (20150212055744)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "feeds" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (21.7ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150212055744"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-12 11:42:47 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 13ms
+
+NameError (uninitialized constant FeedController::User):
+  app/controllers/feed_controller.rb:31:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.0ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-12 11:43:07 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/feed_controller.rb:31:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.8ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-12 12:55:55 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 2435ms
+
+Koala::Facebook::ClientError (type: OAuthException, code: 104, message: An access token is required to request this resource. [HTTP 400]):
+  app/controllers/feed_controller.rb:38:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.2ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-12 12:56:29 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 2410ms
+
+Koala::Facebook::AuthenticationError (type: OAuthException, code: 190, error_subcode: 463, message: Error validating access token: Session has expired on 11 ਫਰਵਰੀ 2015 ਸਵੇਰ 01:00. The current time is 11 ਫਰਵਰੀ 2015 ਬਾਅਦ ਦੁਪਹਿਰ/ਸ਼ਾਮ 11:26. [HTTP 400]):
+  app/controllers/feed_controller.rb:37:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.0ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-12 13:20:25 +0530
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 500 Internal Server Error in 6228ms
+
+Koala::Facebook::AuthenticationError (type: OAuthException, code: 190, error_subcode: 463, message: Error validating access token: Session has expired on 11 ਫਰਵਰੀ 2015 ਸਵੇਰ 01:00. The current time is 11 ਫਰਵਰੀ 2015 ਬਾਅਦ ਦੁਪਹਿਰ/ਸ਼ਾਮ 11:50. [HTTP 400]):
+  app/controllers/feed_controller.rb:37:in `my_fb_feeds'
+
+
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/attmac106/.rvm/gems/ruby-1.9.3-p547/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.7ms)
+
+
+Started GET "/my_fb_feeds.json" for 127.0.0.1 at 2015-02-12 13:21:10 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by FeedController#my_fb_feeds as JSON
+  Parameters: {"feed"=>{}}
+Completed 200 OK in 1309ms (Views: 19.9ms | ActiveRecord: 0.4ms)
